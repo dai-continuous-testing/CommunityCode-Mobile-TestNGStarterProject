@@ -1,4 +1,4 @@
-# CommunityCode-Mobile-JUnitStarterProject
+# CommunityCode-Mobile-TestNGStarterProject
 Start Writing tests with Continuous Testing Cloud and Java TestNG
 ## Cloning The Sample Project
 
@@ -6,7 +6,7 @@ Clone the sample project from [CommunityCode-Mobile-TestNGStarterProject](https:
 
 ```bash
 git clone https://github.com/ExperitestOfficial/CommunityCode-Mobile-TestNGStarterProject
-cd CommunityCode-Mobile-JUnitStarterProject
+cd CommunityCode-Mobile-TestNGStarterProject
 ```
 
 
