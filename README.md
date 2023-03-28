@@ -17,6 +17,7 @@ To set up authentication, update the following parameters in [cloud.properties](
 * cloud.accessKey -  Personal authentication. See [Obtaining Access Key](https://docs.experitest.com/pages/viewpage.action?pageId=52593435) to learn how to obtain an access key.
 
 ## Running Tests
+The minimum JDK requirements for this project is JDK11.
 
 To run the tests in this project, execute to following command line: 
 
