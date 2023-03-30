@@ -1,23 +1,19 @@
 # CommunityCode-Mobile-TestNGStarterProject
-Start Writing tests with Continuous Testing Cloud and Java TestNG
-## Cloning The Sample Project
+This project demonstrates how to write tests with Continuous Testing Cloud and Java TestNG.
 
-Clone the sample project from [CommunityCode-Mobile-TestNGStarterProject](https://github.com/ExperitestOfficial/CommunityCode-Mobile-TestNGStarterProject) repository and navigate to the code directory as shown below:
+To use the project:
+1. Clone the sample project.
+    ```bash
+    git clone https://github.com/ExperitestOfficial/CommunityCode-Mobile-TestNGStarterProject
+    cd CommunityCode-Mobile-TestNGStarterProject
+    ```
+1. Set up authentication by updating these parameters in [cloud.properties](cloud.properties):
+   * cloud.url - Url for the cloud the test would run in. For example, https://company.experitest.com/
+   * cloud.accessKey -  Personal authentication. See [Obtaining Access Key](https://docs.experitest.com/pages/viewpage.action?pageId=52593435) to learn how to obtain an access key.
 
-```bash
-git clone https://github.com/ExperitestOfficial/CommunityCode-Mobile-TestNGStarterProject
-cd CommunityCode-Mobile-TestNGStarterProject
-```
-
-
-## Setting Up Authentication
-
-To set up authentication, update the following parameters in [cloud.properties](cloud.properties):
-* cloud.url - Url for the cloud the test would run in. For example, https://company.experitest.com/
-* cloud.accessKey -  Personal authentication. See [Obtaining Access Key](https://docs.experitest.com/pages/viewpage.action?pageId=52593435) to learn how to obtain an access key.
+Note: The minimum JDK requirement for this project is JDK11.
 
 ## Running Tests
-The minimum JDK requirements for this project is JDK11.
 
 To run the tests in this project, execute to following command line: 
 
@@ -25,7 +21,7 @@ To run the tests in this project, execute to following command line:
 ./gradlew test
 ```
 
-## Upload Application to the Cloud
+## Upload the Application to the Cloud
 
 The example tests in this project use a demo application.
 To upload your own application to cloud:
@@ -47,7 +43,7 @@ dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
 dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
 dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
 ```
-for more ways to upload your application to the cloud, [see here](https://docs.experitest.com/display/TE/Native+Applications+Testing).
+For more ways to upload your application to the cloud, see [Native Applications Testing](https://docs.experitest.com/display/TE/Native+Applications+Testing).
 
 ## Desired Capabilities
 
