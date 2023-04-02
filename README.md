@@ -1,4 +1,4 @@
-# CommunityCode-Mobile-TestNGStarterProject
+# CommunityCode - Mobile Test NG Starter Project
 This project demonstrates how to write tests with Continuous Testing Cloud and Java TestNG.
 
 To use the project:
