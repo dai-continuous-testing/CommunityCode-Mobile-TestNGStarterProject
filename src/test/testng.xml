@@ -1,0 +1,25 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Mobile Demo">
+  <test name="Native Android">
+    <classes>
+      <class name="demo.native_demo.AndroidNativeDemoTest"/>
+    </classes>
+  </test>
+  <test name="Native iOS">
+    <classes>
+      <class name="demo.native_demo.IOSNativeDemoTest"/>
+    </classes>
+  </test>
+  <test name="Web Android">
+    <classes>
+      <class name="demo.web_demo.AndroidWebDemoTest"/>
+    </classes>
+  </test>
+  <test name="Web iOS">
+    <classes>
+      <class name="demo.web_demo.IOSWebDemoTest"/>
+    </classes>
+  </test>
+</suite>
+

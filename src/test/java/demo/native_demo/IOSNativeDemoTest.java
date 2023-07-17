@@ -1,3 +1,6 @@
+package demo.native_demo;
+
+import demo.BaseTest;
 import io.appium.java_client.ios.IOSDriver;
 import io.appium.java_client.ios.IOSElement;
 import io.appium.java_client.remote.IOSMobileCapabilityType;
@@ -10,7 +13,7 @@ import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class IOSExampleTest extends BaseTest {
+public class IOSNativeDemoTest extends BaseTest {
 	
 	protected IOSDriver<IOSElement> driver = null;
 	
@@ -18,7 +21,7 @@ public class IOSExampleTest extends BaseTest {
 	public void setUp() throws MalformedURLException {
 		dc.setCapability("testName", "iOS Native Demo");
 		dc.setCapability("accessKey", getProperty("cloud.accessKey"));
-		dc.setCapability("deviceQuery", "@os='ios' and @category='PHONE'");
+		dc.setCapability("deviceQuery", "@os='ios'");
 		dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
 		dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
 		dc.setCapability("appiumVersion", "1.22.3");
@@ -26,7 +29,7 @@ public class IOSExampleTest extends BaseTest {
 	}
 	
 	@Test
-	public void quickStartiOSNativeDemo() {
+	public void iOSNativeDemo() {
 		driver.rotate(ScreenOrientation.PORTRAIT);
 		driver.findElement(By.xpath("//*[@name='usernameTextField']")).sendKeys("company");
 		driver.findElement(By.xpath("//*[@name='passwordTextField']")).sendKeys("company");
