@@ -24,7 +24,7 @@ Sequentially:
 
 Parallel:
 ```bash
-./gradlew test -PparallelFlag
+./gradlew test -PparallelTests
 ```
 
 ## Upload the Application to the Cloud

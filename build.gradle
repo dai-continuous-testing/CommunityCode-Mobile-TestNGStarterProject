@@ -10,10 +10,10 @@ repositories {
 }
 
 test {
-    def parallelFlag = project.hasProperty('parallelFlag')
+    def parallelTests = project.hasProperty('parallelTests')
     useTestNG() {
         suites "src/test/testng.xml"
-        if (parallelFlag) {
+        if (parallelTests) {
             parallel 'tests' // Set to 'tests' mode for parallel execution by tests
         }
     }
