@@ -17,8 +17,14 @@ Note: The minimum JDK requirement for this project is JDK 11.
 
 To run the tests in this project, run this on the command line: 
 
+Sequentially:
 ```bash
 ./gradlew test
+```
+
+Parallel:
+```bash
+./gradlew test -PparallelTests
 ```
 
 ## Upload the Application to the Cloud
