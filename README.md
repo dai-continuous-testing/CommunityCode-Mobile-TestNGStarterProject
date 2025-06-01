@@ -39,15 +39,15 @@ To upload your own application to cloud:
 In your tests, change *com.experitest.ExperiBank* (and activity if needed) in desired capabilities for your application, in the following lines:
 
 * For Android:
-```java
-dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank/.LoginActivity");
-dc.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.experitest.ExperiBank");
-dc.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, ".LoginActivity");
+```
+setApp("cloud:com.experitest.ExperiBank/.LoginActivity")
+setAppPackage("com.experitest.ExperiBank")
+setAppActivity(".LoginActivity")
 ```
 * For iOS:
-```java
-dc.setCapability(MobileCapabilityType.APP, "cloud:com.experitest.ExperiBank");
-dc.setCapability(IOSMobileCapabilityType.BUNDLE_ID, "com.experitest.ExperiBank");
+```
+setApp("cloud:com.experitest.ExperiBank")
+setBundleId("com.experitest.ExperiBank")
 ```
 For more ways to upload your application to the cloud, see [Native Applications Testing](https://docs.digital.ai/bundle/TE/page/native_applications_testing.html).
 
